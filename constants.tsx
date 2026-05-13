@@ -4,7 +4,7 @@ import { Skill, Project, Certification, NavItem } from './types';
 export const PERSONAL_INFO = {
   fullName: "Dan Guilliam Montenegro",
   title: "Full-Stack / Software Developer",
-  avatar: "/profile.jpg",
+  avatar: "profile.jpg",
   email: "dangmontenegro@gmail.com",
   github: "https://github.com/DUnknown144545",
   linkedin: "https://www.linkedin.com/in/dan-guilliam-montenegro-a5231035a/",
