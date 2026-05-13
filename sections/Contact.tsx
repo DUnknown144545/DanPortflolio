@@ -28,14 +28,14 @@ const Contact: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's <span className="text-indigo-500">Collaborate</span></h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's <span className="text-[#7c3aed]">Collaborate</span></h2>
               <p className="text-gray-400 mb-10 leading-relaxed">
                 Interested in working together or just want to say hi? My inbox is always open. I'm currently looking for new opportunities and collaborations on interesting projects.
               </p>
               
               <div className="space-y-6 mb-10">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-indigo-500/10 text-indigo-400 rounded-lg">
+                  <div className="p-3 bg-[#7c3aed]/10 text-[#7c3aed] rounded-lg">
                     <Mail size={24} />
                   </div>
                   <div>
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-indigo-500/10 text-indigo-400 rounded-lg">
+                  <div className="p-3 bg-[#7c3aed]/10 text-[#7c3aed] rounded-lg">
                     <MapPin size={24} />
                   </div>
                   <div>
@@ -55,10 +55,10 @@ const Contact: React.FC = () => {
               </div>
 
               <div className="flex gap-4">
-                <a href={PERSONAL_INFO.github} className="p-3 glass rounded-full hover:text-indigo-400 transition-colors">
+                <a href={PERSONAL_INFO.github} className="p-3 glass rounded-full hover:text-[#7c3aed] transition-colors">
                   <Github size={24} />
                 </a>
-                <a href={PERSONAL_INFO.linkedin} className="p-3 glass rounded-full hover:text-indigo-400 transition-colors">
+                <a href={PERSONAL_INFO.linkedin} className="p-3 glass rounded-full hover:text-[#7c3aed] transition-colors">
                   <Linkedin size={24} />
                 </a>
               </div>
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                       required
                       type="text" 
                       placeholder="Your Name"
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#7c3aed] transition-all"
                       value={formData.name}
                       onChange={e => setFormData({...formData, name: e.target.value})}
                     />
@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                       required
                       type="email" 
                       placeholder="your.email@example.com"
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#7c3aed] transition-all"
                       value={formData.email}
                       onChange={e => setFormData({...formData, email: e.target.value})}
                     />
@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
                       required
                       rows={4}
                       placeholder="What's on your mind?"
-                      className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all resize-none"
+                      className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#7c3aed] transition-all resize-none"
                       value={formData.message}
                       onChange={e => setFormData({...formData, message: e.target.value})}
                     />
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
                   <button 
                     disabled={status === 'loading'}
                     type="submit" 
-                    className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50"
+                    className="w-full py-4 bg-[#7c3aed] hover:bg-[#5b21b6] text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50"
                   >
                     {status === 'loading' ? (
                       <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>

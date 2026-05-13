@@ -27,12 +27,12 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gray-950/50">
+    <section id="about" className="py-24 bg-[#020816]/50">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="w-full lg:w-1/2">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-indigo-600/30 blur-2xl rounded-full"></div>
+              <div className="absolute inset-0 bg-[#7c3aed]/30 blur-2xl rounded-full"></div>
               <img 
                 src="https://picsum.photos/seed/profile/500/600" 
                 alt="About Me" 
@@ -42,15 +42,15 @@ const About: React.FC = () => {
           </div>
           
           <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Building Tomorrow's <span className="text-indigo-500">Solutions</span> Today</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Building Tomorrow's <span className="text-[#7c3aed]">Solutions</span> Today</h2>
             <p className="text-gray-400 mb-8 leading-relaxed">
               With a background in both high-level software development and low-level embedded programming, I bring a unique holistic perspective to every project. Whether it's a mobile app for hundreds of users or a specialized IoT device, I focus on reliability, scalability, and impact.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {focusAreas.map((area, idx) => (
-                <div key={idx} className="p-4 glass rounded-xl border-l-4 border-l-indigo-500">
-                  <div className="text-indigo-400 mb-3">{area.icon}</div>
+                <div key={idx} className="p-4 glass rounded-xl border-l-4 border-l-[#7c3aed]">
+                  <div className="text-[#7c3aed] mb-3">{area.icon}</div>
                   <h4 className="font-bold mb-1 text-white">{area.title}</h4>
                   <p className="text-xs text-gray-500 leading-tight">{area.desc}</p>
                 </div>

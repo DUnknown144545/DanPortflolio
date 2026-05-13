@@ -7,8 +7,8 @@ const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-indigo-600/20 rounded-full blur-[120px]"></div>
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px]"></div>
+      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-[#7c3aed]/20 rounded-full blur-[120px]"></div>
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-[#38bdf8]/15 rounded-full blur-[120px]"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <a 
                 href="#projects" 
-                className="w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all group shadow-xl shadow-indigo-600/20"
+                className="w-full sm:w-auto px-8 py-4 bg-[#7c3aed] hover:bg-[#5b21b6] text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all group shadow-xl shadow-[#7c3aed]/20"
               >
                 View My Work
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="hidden md:flex justify-center">
-            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden p-1 bg-gradient-to-br from-indigo-900/40 to-purple-900/40 shadow-2xl">
+            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden p-1 bg-gradient-to-br from-[#151335]/40 to-[#7c3aed]/40 shadow-2xl">
               <img src={PERSONAL_INFO.avatar} alt={`${PERSONAL_INFO.fullName} profile`} className="object-cover w-full h-full rounded-full" />
             </div>
           </div>

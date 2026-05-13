@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="group relative glass rounded-2xl overflow-hidden hover:border-indigo-500/50 transition-all duration-500">
+    <div className="group relative glass rounded-2xl overflow-hidden hover:border-[#7c3aed]/50 transition-all duration-500">
       <div className="aspect-video w-full overflow-hidden">
         <img 
           src={project.image} 
@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.techStack.map(tech => (
             <span 
               key={tech} 
-              className="px-2 py-1 text-[10px] uppercase font-mono bg-indigo-500/10 text-indigo-400 rounded border border-indigo-500/20"
+              className="px-2 py-1 text-[10px] uppercase font-mono bg-[#7c3aed]/10 text-[#7c3aed] rounded border border-[#7c3aed]/20"
             >
               {tech}
             </span>
@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
         
         <div className="flex items-center gap-4">
-          <button className="flex items-center gap-2 text-sm font-semibold text-white hover:text-indigo-400 transition-colors">
+          <button className="flex items-center gap-2 text-sm font-semibold text-white hover:text-[#7c3aed] transition-colors">
             <Github size={18} /> Code
           </button>
          

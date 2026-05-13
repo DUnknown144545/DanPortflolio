@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'py-4 glass' : 'py-6 bg-transparent'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2 group">
-          <div className="p-2 bg-indigo-600 rounded-lg group-hover:rotate-12 transition-transform">
+          <div className="p-2 bg-[#7c3aed] rounded-lg group-hover:rotate-12 transition-transform">
             <Code2 size={24} className="text-white" />
           </div>
           <span className="text-xl font-bold tracking-tight">Dan's Portfolio</span>
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           ))}
           <a
             href="#contact"
-            className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-full transition-all"
+            className="px-5 py-2.5 bg-[#7c3aed] hover:bg-[#5b21b6] text-white text-sm font-semibold rounded-full transition-all"
           >
             Hire Me
           </a>
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
           ))}
           <a
             href="#contact"
-            className="w-full text-center py-3 bg-indigo-600 text-white font-semibold rounded-lg"
+            className="w-full text-center py-3 bg-[#7c3aed] text-white font-semibold rounded-lg hover:bg-[#5b21b6] transition-all"
             onClick={() => setIsOpen(false)}
           >
             Hire Me
