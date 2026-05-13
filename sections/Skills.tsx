@@ -24,9 +24,10 @@ const Skills: React.FC = () => {
                 {SKILLS.filter(s => s.category === category).map(skill => (
                   <div 
                     key={skill.name}
-                    className="px-4 py-2 bg-gray-900 border border-gray-800 rounded-lg text-sm font-medium hover:border-[#7c3aed] transition-colors"
+                    className="px-4 py-2 bg-gray-900 border border-gray-800 rounded-lg text-sm font-medium hover:border-[#7c3aed] transition-colors flex items-center gap-2"
                   >
-                    {skill.name}
+                    <span className="text-sm">{skill.icon}</span>
+                    <span>{skill.name}</span>
                   </div>
                 ))}
               </div>

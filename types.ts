@@ -6,6 +6,7 @@ export interface NavItem {
 
 export interface Skill {
   name: string;
+  icon: string;
   category: 'Frontend' | 'Backend' | 'Mobile' | 'Cloud & BaaS' | 'DevOps & Tools' | 'Embedded / Low-level';
 }
 
