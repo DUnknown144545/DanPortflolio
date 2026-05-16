@@ -1,25 +1,58 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Send, Mail, MapPin, Github, Linkedin, CheckCircle2, AlertCircle } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+  useEffect(() => {
+    if (publicKey) {
+      emailjs.init(publicKey);
+    }
+  }, [publicKey]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrorMessage(null);
+
+    if (!serviceId || !templateId || !publicKey) {
+      setErrorMessage('EmailJS is not configured. Add VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY.');
+      setStatus('error');
+      return;
+    }
+
     setStatus('loading');
-    
-    // Simulate API call
-    setTimeout(() => {
-      console.log("Form Submitted:", formData);
+
+    try {
+      await emailjs.send(serviceId, templateId, {
+        name: formData.name,
+        from_name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        title: 'Portfolio Contact Form',
+      });
+
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
-      
-      // Reset after 5 seconds
       setTimeout(() => setStatus('idle'), 5000);
-    }, 1500);
+    } catch (error) {
+      console.error('EmailJS send error:', error);
+      const emailJsError = error as { status?: number; text?: string };
+      setErrorMessage(
+        emailJsError?.text
+          ? `Unable to send your message: ${emailJsError.text}`
+          : 'Unable to send your message. Please try again later.'
+      );
+      setStatus('error');
+    }
   };
 
   return (
@@ -123,8 +156,12 @@ const Contact: React.FC = () => {
                     )}
                   </button>
                   {status === 'error' && (
-                    <div className="flex items-center gap-2 text-red-500 text-sm mt-2">
-                      <AlertCircle size={16} /> Something went wrong. Please try again.
+                    <div className="text-red-500 text-sm mt-2 space-y-1">
+                      <div className="flex items-center gap-2">
+                        <AlertCircle size={16} />
+                        <span>Something went wrong. Please try again.</span>
+                      </div>
+                      {errorMessage && <div className="pl-7">{errorMessage}</div>}
                     </div>
                   )}
                 </form>

@@ -10,6 +10,7 @@
     "resize-avatar": "node scripts/resize-avatar.js"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "lucide-react": "^0.563.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
