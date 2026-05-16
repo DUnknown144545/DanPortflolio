@@ -1,0 +1,11 @@
+I couldn't automatically write the uploaded image into this file due to attachment access limits.
+
+Please either:
+
+1) Replace this file by saving your photo as `public/profile.jpg` (recommended). Image size ~400×400 px is ideal.
+
+OR
+
+2) Reply here and confirm you want me to add the uploaded image to `public/profile.jpg` and I'll try again.
+
+After the image is in place, the hero will display it automatically (the app already points at `/profile.jpg`).
