@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="hidden md:flex justify-center">
-            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden p-1 bg-gradient-to-br from-[#151335]/40 to-[#7c3aed]/40 shadow-2xl">
+            <div className="w-80 h-80 md:w-[42rem] md:h-[45rem] rounded-full overflow-hidden p-2 bg-gradient-to-br from-[#151335]/40 to-[#7c3aed]/40 shadow-2xl">
               <img src={PERSONAL_INFO.avatar} alt={`${PERSONAL_INFO.fullName} profile`} className="object-cover w-full h-full rounded-full" />
             </div>
           </div>

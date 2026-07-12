@@ -15,6 +15,7 @@ export interface Project {
   description: string;
   techStack: string[];
   image: string;
+  imageFolder?: string;
   githubUrl?: string;
   demoUrl?: string;
 }

@@ -1,5 +1,6 @@
 
 import { Skill, Project, Certification, NavItem } from './types';
+import hotelReservationImage from './Projects-Portfolio/HOTEL-RESERVATION/1.png';
 
 export const PERSONAL_INFO = {
   fullName: "Dan Guilliam Montenegro",
@@ -47,33 +48,38 @@ export const SKILLS: Skill[] = [
 export const PROJECTS: Project[] = [
   {
     title: "SmartFit",
-    description: "AI-based shirt size estimator using pose detection and ML to provide accurate clothing recommendations.",
+    description: "SmartFit is an AI-powered web application that leverages computer vision and machine learning to recommend accurate shirt sizes from user images while integrating with an e-commerce storefront for a personalized shopping experience.",
     techStack: ["Python", "PHP", "RestAPI", "MySQL", "JavaScript","HTML","CSS"],
-    image: "https://picsum.photos/seed/smartfit/600/400"
+    image: "https://picsum.photos/seed/smartfit/600/400",
+    imageFolder: "SMART-FIT"
   },
   {
     title: "SAO System",
-    description: "Student Affairs Office management system streamlining academic records and administrative workflows.",
+    description: "A dedicated platform for managing student affairs operations including student services, document processing, and administrative workflows. It streamlines communication between students and the affairs office.",
     techStack: ["Django", "SQLite", "JavaScript", "HTML", "CSS"],
-    image: "https://picsum.photos/seed/sao/600/400"
+    image: "https://picsum.photos/seed/sao/600/400",
+    imageFolder: "SAO"
   },
   {
     title: "BrainBlitz",
-    description: "An interactive learning-based quiz application with real-time leaderboards and category-based challenges.",
+    description: "A PHP-based exam platform offering multiple-choice and timed exams with automated grading, categories to choose from, and real-time leaderboards. Users can take practice or scored exams, track performance over time, and compete on leaderboards to encourage learning.",
     techStack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
-    image: "https://picsum.photos/seed/quiz/600/400"
+    image: "https://picsum.photos/seed/quiz/600/400",
+    imageFolder: "BRAIN BLITZ"
   },
   {
     title: "Auto Egg Incubation",
     description: "IoT-based automation project for monitoring and controlling environmental factors in egg incubators.",
     techStack: ["Arduino", "C++", "React", "TypeScript", "Firebase"],
-    image: "https://picsum.photos/seed/iot/600/400"
+    image: "https://picsum.photos/seed/iot/600/400",
+    imageFolder: "AUTOMATED EGG ENCUBATION"
   },
   {
-    title: "Hotel Booking System",
-    description: "Full-stack reservation platform featuring room management, payment integration, and booking analytics.",
-    techStack: ["MySQL", "HTML", "JavaScript", "CSS", "Express.js"],
-    image: "https://picsum.photos/seed/hotel/600/400"
+    title: "Hotel Reservation System",
+    description: "A polished hotel booking platform with room browsing, reservation management, guest communication, and a streamlined admin experience for property staff.",
+    techStack: ["React", "TypeScript", "Node.js", "Express.js", "MySQL"],
+    image: hotelReservationImage,
+    imageFolder: "HOTEL-RESERVATION"
   }
 ];  
 
