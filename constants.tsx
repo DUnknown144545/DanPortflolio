@@ -95,5 +95,17 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "freeCodeCamp",
     date: "2023",
     link: "https://www.freecodecamp.org/certification/fcc-f57a3893-7683-472a-a9c6-fc9b2e4d2215/javascript-algorithms-and-data-structures-v8"
+  },
+  {
+    title: " Oracle Database SQL Certified Associate",
+    issuer: "Oracle",
+    date: "30-SEP-26",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=90DEE63C22FBE6E9A2CD206F855EC9BA0C0A71F2D5944CC313D85CFE0EDC9F17"
+  },
+  {
+    title: "Oracle Fusion AI Agent Studio Certified Foundations Associate - Rel 1",
+    issuer: "Oracle",
+    date: "01-SEP-26",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=9D08119671F81453BBDECABE71A405761C4EABB652EA34DB9792DAB0B662173D"
   }
 ];
