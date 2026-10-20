@@ -97,6 +97,12 @@ export const CERTIFICATIONS: Certification[] = [
     link: "https://www.freecodecamp.org/certification/fcc-f57a3893-7683-472a-a9c6-fc9b2e4d2215/javascript-algorithms-and-data-structures-v8"
   },
   {
+    title: " Oracle Database PL/SQL Developer Certified Professional ",
+    issuer: "Oracle",
+    date: "20-OCT-26",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=53912FCC00DBED6060CD275E6AF73D351DD055CD4D11D3AF6E544C9CBFDB266B"
+  },
+  {
     title: " Oracle Database SQL Certified Associate",
     issuer: "Oracle",
     date: "30-SEP-26",
